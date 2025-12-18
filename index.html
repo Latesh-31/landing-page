@@ -3,342 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unmarshal - Blockchain Data Infrastructure</title>
+    <title>CoreShift - All-in-one HR platform</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Top Banner -->
-    <div class="top-banner">
-        Join the Solhi waitlist now! <a href="#">Join Now</a>
-    </div>
-
-    <!-- Header -->
-    <header class="header container">
-        <a href="#" class="logo">
-            <i class="fas fa-cube"></i> Unmarshal
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Unmarshal 3.0</a></li>
-                <li><a href="#">SMARSH</a></li>
-                <li><a href="#">Roadmap</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Explorer</a></li>
-            </ul>
-        </nav>
-        <div class="header-actions">
-            <a href="#" class="btn btn-outline-white">Sign In</a>
-        </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-background">
-                <!-- Abstract animated shapes - using CSS for simplicity -->
-                <svg class="background-svg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice">
-                    <defs>
-                        <filter id="glow">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
-                            <feMerge>
-                                <feMergeNode in="blur"></feMergeNode>
-                                <feMergeNode in="SourceGraphic"></feMergeNode>
-                            </feMerge>
-                        </filter>
-                    </defs>
-                    <!-- Smaller floating blocks -->
-                    <circle cx="150" cy="100" r="15" fill="#333" filter="url(#glow)">
-                        <animateMotion path="M 0 0 C 50 20, 100 -20, 150 0 C 100 20, 50 -20, 0 0 Z" dur="6s" repeatCount="indefinite" rotate="auto" />
-                        <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite" />
-                    </circle>
-                    <rect x="800" y="300" width="30" height="30" rx="5" ry="5" fill="#333" filter="url(#glow)">
-                        <animateMotion path="M 0 0 C -20 -50, 20 -100, 0 -150 C -20 -100, 20 -50, 0 0 Z" dur="7s" repeatCount="indefinite" rotate="auto" />
-                        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite" />
-                    </rect>
-                    <path d="M 100 250 Q 200 150, 300 250 T 500 250" stroke="#333" stroke-width="1" fill="none" opacity="0.4" filter="url(#glow)">
-                        <animate attributeName="stroke-dasharray" values="10 10; 0 20; 10 10" dur="8s" repeatCount="indefinite" />
-                        <animate attributeName="stroke-dashoffset" values="0; 200" dur="8s" repeatCount="indefinite" />
-                    </path>
-                     <path d="M 700 150 C 650 50, 850 50, 800 150 S 700 250, 650 150" stroke="#333" stroke-width="1" fill="none" opacity="0.4" filter="url(#glow)">
-                        <animate attributeName="stroke-dasharray" values="10 5; 0 15; 10 5" dur="7s" repeatCount="indefinite" />
-                        <animate attributeName="stroke-dashoffset" values="0; 150" dur="7s" repeatCount="indefinite" />
-                    </path>
-                    <!-- Rotating snowflake icon simulation -->
-                    <g transform="translate(850, 100)" filter="url(#glow)">
-                        <path d="M0, -25 L-22, -12.5 L-22, 12.5 L0, 25 L22, 12.5 L22, -12.5 Z" fill="#CCFF00" opacity="0.3">
-                            <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="10s" repeatCount="indefinite" />
-                        </path>
-                    </g>
-                </svg>
-            </div>
-            <div class="hero-content container animate-on-scroll">
-                <div class="ai-badge">
-                    <i class="fas fa-robot"></i> POWERED BY AI
-                </div>
-                <h1>Most Reliable Blockchain Data Infrastructure</h1>
-                <p>The easiest way to query Blockchain data from 35+ chains including Ethereum, BSC, Polygon to "AI Powered Blockchain Data.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">PARSER</a>
-                    <a href="#" class="btn btn-secondary">GET STARTED <i class="fas fa-plus"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Supported Chains Section -->
-        <section class="supported-chains container">
-            <p class="section-label animate-on-scroll">SUPPORTED CHAINS</p>
-            <div class="logo-grid">
-                <!-- Using placeholder icons/colors for now -->
-                <img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64c679953ce392a834f3780a_Mantle%20Logo.svg" alt="Mantle" class="animate-on-scroll" style="animation-delay: 0.1s;">
-                <img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d7c5054a106e2ceef16335_optimism-white.svg" alt="Optimism" class="animate-on-scroll" style="animation-delay: 0.2s;">
-                <img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/65306e93817f76632c589728_zkSync_Logo.svg" alt="zkSync" class="animate-on-scroll" style="animation-delay: 0.3s;">
-                <img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d89a742ce7488f727c95b6_arbitrum-one-logo.svg" alt="Arbitrum" class="animate-on-scroll" style="animation-delay: 0.4s;">
-                <img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d7ca08a8a9202a0a256a4b_polygon-matic-logo.svg" alt="Polygon" class="animate-on-scroll" style="animation-delay: 0.5s;">
-            </div>
-        </section>
-
-        <!-- Unmarshal 3.0 Section -->
-        <section class="unmarshal-30 container">
-            <p class="section-label animate-on-scroll">UNMARSHAL 3.0</p>
-            <div class="content animate-on-scroll">
-                <p class="subtitle">Blockchain and AI Integration</p>
-                <h2>Unmarshal is <span class="emojis"><span class="emoji-block">🧠</span><span class="emoji-link">🔗</span><span class="emoji-spark">⚡</span></span> revolutionising the intersection of <strong>blockchain and artificial intelligence</strong>, ushering in a new era of <strong>blockchain data indexing</strong>. Our mission is to seamlessly integrate <span class="emojis"><span class="emoji-link">🔗</span><span class="emoji-chart">📈</span></span> these key technologies to unlock new possibilities and drive innovations.</h2>
-                <a href="#" class="btn btn-secondary">LEARN MORE ABOUT UNMARSHAL 3.0 <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="stats-section container">
-            <div class="left-col animate-on-scroll">
-                <p class="section-label">OUR STATS SO FAR</p>
-                <h3>Join The Community Of Million</h3>
-                <a href="#" class="btn btn-primary">JOIN NOW</a>
-            </div>
-            <div class="right-col">
-                <div class="stat-item animate-on-scroll" style="animation-delay: 0.1s;">
-                    <p>REQUESTS SERVED</p>
-                    <div class="number" data-target="11000000000">0</div>
-                </div>
-                <div class="stat-item animate-on-scroll" style="animation-delay: 0.2s;">
-                    <p>CHAINS INDEXED</p>
-                    <div class="number" data-target="35">0</div>
-                </div>
-                <div class="stat-item animate-on-scroll" style="animation-delay: 0.3s;">
-                    <p>CLIENTS SERVED</p>
-                    <div class="number" data-target="4100">0</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blockchain Indexing Section -->
-        <section class="blockchain-indexing container">
-            <div class="left-content animate-on-scroll">
-                <p class="section-label">BLOCKCHAIN INDEXING</p>
-                <h2>Your Gateway to Advanced Blockchain Data Indexing</h2>
-                <p>Experience the power of the Unmarshal network, where blockchain indexing meets decentralization. Our Proof of Staked Authority model empowers community members to run indexers, enhancing reliability and trust.</p>
-                <a href="#" class="btn btn-primary">EXPLORE</a>
-            </div>
-            <div class="right-illustration animate-on-scroll">
-                <div class="illustration-elements">
-                    <div class="center-disk"><i class="fas fa-fingerprint"></i></div>
-                    <div class="surrounding-blocks">
-                        <div></div><div></div><div></div><div></div><div></div><div></div>
-                    </div>
-                    <div class="data-card">
-                        <i class="fas fa-plus-circle"></i>
-                        <div class="numbers">
-                            <span>$427,581</span>
-                            <span>$4,546</span>
-                        </div>
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="features-grid container">
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.1s;">
-                    <i class="fas fa-database"></i>
-                    <h4>Deep Indexing</h4>
-                    <p>Unmarshal Indexers extract data from 35+ chains with deep data decoders, optimizers, and off-chain data context.</p>
-                </div>
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.2s;">
-                    <i class="fas fa-code"></i>
-                    <h4>Rich API suite</h4>
-                    <p>Unmarshal provides APIs for every single data bit that flows into blockchain and helps retrieve it easily.</p>
-                </div>
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.3s;">
-                    <i class="fas fa-headset"></i>
-                    <h4>Customer centric</h4>
-                    <p>24/7 support availability and dedicated solutions for enterprise clients with flexible pricing plans.</p>
-                </div>
-                <div class="feature-item animate-on-scroll" style="animation-delay: 0.4s;">
-                    <i class="fas fa-lock-open"></i>
-                    <h4>True decentralization</h4>
-                    <p>Unmarshal is a decentralized network of indexers ensuring reliability, scalability, and censorship resistance.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Supported Blockchains Carousel -->
-        <section class="supported-blockchains-carousel container">
-            <p class="section-label animate-on-scroll">SUPPORTED BLOCKCHAINS</p>
-            <h2 class="animate-on-scroll">Hear the heartbeat of every chain</h2>
-            <p class="animate-on-scroll">The easiest way to query Blockchain data from 35+ chains including Ethereum, BSC, Polygon to "AI Powered Blockchain Data.</p>
-            <a href="#" class="btn btn-primary animate-on-scroll">EXPLORE ALL</a>
-
-            <div class="blockchain-logos-wrapper animate-on-scroll">
-                <div class="blockchain-logos">
-                    <!-- Repeated logos for infinite scroll effect -->
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64c679953ce392a834f3780a_Mantle%20Logo.svg" alt="Mantle"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d7c5054a106e2ceef16335_optimism-white.svg" alt="Optimism"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/65306e93817f76632c589728_zkSync_Logo.svg" alt="zkSync"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d89a742ce7488f727c95b6_arbitrum-one-logo.svg" alt="Arbitrum"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d7ca08a8a9202a0a256a4b_polygon-matic-logo.svg" alt="Polygon"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64c679953ce392a834f3780a_Mantle%20Logo.svg" alt="Mantle"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d7c5054a106e2ceef16335_optimism-white.svg" alt="Optimism"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/65306e93817f76632c589728_zkSync_Logo.svg" alt="zkSync"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d89a742ce7488f727c95b6_arbitrum-one-logo.svg" alt="Arbitrum"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d7ca08a8a9202a0a256a4b_polygon-matic-logo.svg" alt="Polygon"></div>
-                    <!-- Repeat for smooth loop -->
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64c679953ce392a834f3780a_Mantle%20Logo.svg" alt="Mantle"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d7c5054a106e2ceef16335_optimism-white.svg" alt="Optimism"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/65306e93817f76632c589728_zkSync_Logo.svg" alt="zkSync"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d89a742ce7488f727c95b6_arbitrum-one-logo.svg" alt="Arbitrum"></div>
-                    <div><img src="https://assets-global.website-files.com/64b5815663f73809075ce86c/64d7ca08a8a9202a0a256a4b_polygon-matic-logo.svg" alt="Polygon"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Unmarshal AI Integration Section -->
-        <section class="unmarshal-ai-section container">
-            <div class="left-content animate-on-scroll">
-                <p class="section-label">UNMARSHAL.AI</p>
-                <h2>Revolutionizing Blockchain & AI Integration</h2>
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="header container">
+            <a href="#" class="logo">
+                CoreShift
+            </a>
+            <nav>
                 <ul>
-                    <li class="active" data-content="Your Gateway to Advanced Blockchain Data Indexing">Your Gateway to Advanced Blockchain Data Indexing</li>
-                    <li data-content="Decentralized Unmarshal Indexers">Decentralized Unmarshal Indexers</li>
-                    <li data-content="Unmarshal AI Toolkit">Unmarshal AI Toolkit</li>
-                    <li data-content="Support for RWA Chains and DePIN Protocols">Support for RWA Chains and DePIN Protocols</li>
-                    <li data-content="Introducing Blockchain Data Intent Chain">Introducing Blockchain Data Intent Chain</li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
                 </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="text-link">Sign In</a>
+                <a href="#" class="btn btn-dark">Request a Demo</a>
             </div>
-            <div class="right-illustration animate-on-scroll">
-                <div class="ai-graphic">
-                    <div class="laptop-frame">
-                        <div class="screen">
-                            <span class="chart-line" style="top: 20%; left: 0; width: 100%;"></span>
-                            <span class="chart-line" style="top: 40%; left: 0; width: 100%;"></span>
-                            <span class="chart-line" style="top: 60%; left: 0; width: 100%;"></span>
-                            <span class="chart-line" style="top: 80%; left: 0; width: 100%;"></span>
-                            <div class="chart-dot" style="left: 10%;"></div>
-                            <div class="chart-dot" style="left: 30%; top: calc(60% - 4px);"></div>
-                            <div class="chart-dot" style="left: 70%; top: calc(40% - 4px);"></div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-center-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h1>All-in-one HR platform</h1>
+                    <p>CoreShift is a modern, all-in-one HR platform designed to perfectly fit your business needs</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-red">Request a Demo</a>
+                    </div>
+                </div>
+                <div class="hero-elements">
+                    <div class="hero-element avatar-1" style="--delay: 0s;">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1">
+                    </div>
+                    <div class="hero-element avatar-2" style="--delay: 0.5s;">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 2">
+                    </div>
+                    <div class="hero-element avatar-3" style="--delay: 1s;">
+                        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="User 3">
+                    </div>
+                    <div class="hero-element avatar-4" style="--delay: 1.5s;">
+                        <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="User 4">
+                    </div>
+                    <div class="hero-element icon-lightbulb" style="--delay: 0.2s;">
+                        <i class="far fa-lightbulb"></i>
+                    </div>
+                    <div class="hero-element icon-balloons" style="--delay: 0.8s;">
+                        <i class="fas fa-balloon"></i>
+                    </div>
+                    <div class="hero-element icon-bolt" style="--delay: 1.2s;">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="hero-element icon-eyes" style="--delay: 1.8s;">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="hero-element icon-central" style="--delay: 0s;"></div>
+                </div>
+            </section>
+
+            <!-- Built for Everyone Section -->
+            <section class="section built-for-everyone-section">
+                <div class="container">
+                    <h2 class="section-title">Built for everyone</h2>
+                    <p class="section-subtitle">Thousands of businesses, from startups to enterprises, use CoreShift to handle payments.</p>
+
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="card-icon"><img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e23ef820068832a87d_Chart.svg" alt="Attendance Report"></div>
+                            <div class="card-text">
+                                <h3>For HR professionals</h3>
+                                <p>Use a single cloud system for your employees, candidates and HR processes info.</p>
+                            </div>
+                            <div class="card-overlay-content">
+                                <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e23ef820068832a87d_Chart.svg" alt="Attendance Report">
+                                <span>Attendance Report</span>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="card-icon"><img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e3c54483759954d7f9_Graph.svg" alt="Real-Time Insights"></div>
+                            <div class="card-text">
+                                <h3>For managers & leaders</h3>
+                                <p>Get always up-to-date data and monitor performance of the company.</p>
+                            </div>
+                            <div class="card-overlay-content">
+                                <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e3c54483759954d7f9_Graph.svg" alt="Real-Time Insights">
+                                <span>Access Real-Time Insights</span>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="card-icon"><img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e28f3b232c2ed14d45_Document.svg" alt="Legal Documents"></div>
+                            <div class="card-text">
+                                <h3>For legal teams</h3>
+                                <p>CoreShift helps legal teams by streamlining compliance, managing contracts and policies.</p>
+                            </div>
+                             <div class="card-overlay-content">
+                                <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e28f3b232c2ed14d45_Document.svg" alt="Legal Documents">
+                                <span>Automate Legal Documents</span>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="card-icon"><img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e3524b0244747353f6_Paper.svg" alt="Employee Data"></div>
+                            <div class="card-text">
+                                <h3>All employee data at once</h3>
+                                <p>Contact and personal information, paid and unpaid leave balances, career history, projects and more.</p>
+                            </div>
+                             <div class="card-overlay-content">
+                                <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e3524b0244747353f6_Paper.svg" alt="Employee Data">
+                                <span>View all employee data at once</span>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="card-icon"><img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e2714c114f2e967a57_Task.svg" alt="Training Participation"></div>
+                            <div class="card-text">
+                                <h3>For executives</h3>
+                                <p>Track high-level metrics and make data-driven decisions that impact the entire organization.</p>
+                            </div>
+                             <div class="card-overlay-content">
+                                <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e2714c114f2e967a57_Task.svg" alt="Training Participation">
+                                <span>Monitor Training Participation</span>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="card-icon"><img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e21eb231362e3d74a7_Team.svg" alt="Team Collaboration"></div>
+                            <div class="card-text">
+                                <h3>For teams & employees</h3>
+                                <p>Get to know who is going to be out of office and be aware of upcoming events.</p>
+                            </div>
+                            <div class="card-overlay-content">
+                                <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526e0e21eb231362e3d74a7_Team.svg" alt="Team Collaboration">
+                                <span>Boost Team Collaboration</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="central-block">
-                        <span>BINANCE CHAIN</span>
-                        <strong>1,023,456 BLOCKS</strong>
+                </div>
+            </section>
+
+            <!-- Integration Section -->
+            <section class="section integration-section">
+                <div class="container">
+                    <div class="integration-icon-top"><i class="fas fa-cogs"></i></div>
+                    <h2 class="section-title">Integrate with your existing tools in seconds</h2>
+                    <div class="integration-icons-wrapper">
+                        <div class="integration-icon-card" data-tool="Google Calendar">
+                            <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526ed7fc2643a6d71ec8024_calendar.svg" alt="Google Calendar">
+                        </div>
+                        <div class="integration-icon-card" data-tool="Google Meet">
+                            <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526ed7f7d1b3337a77e87b7_google-meet.svg" alt="Google Meet">
+                        </div>
+                        <div class="integration-icon-card" data-tool="Microsoft Outlook">
+                            <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526ed7f69ff985d778a6352_microsoft-outlook.svg" alt="Microsoft Outlook">
+                        </div>
+                        <div class="integration-icon-card" data-tool="Microsoft Teams">
+                            <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526ed7f69ff985d778a6351_microsoft-teams.svg" alt="Microsoft Teams">
+                        </div>
+                        <div class="integration-icon-card" data-tool="Gmail">
+                            <img src="https://assets-global.website-files.com/65203f39a48bbd6d3969c3a3/6526ed7f5a3407983637651a_gmail.svg" alt="Gmail">
+                        </div>
                     </div>
-                    <div class="block-stream"></div>
-                    <div class="data-tower"></div>
+                    <p class="current-integration-tool">Gmail</p>
+                    <p class="integration-tool-description">Seamless email management</p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- BUIDL Section -->
-        <section class="buidl-section container">
-            <p class="section-label animate-on-scroll">BUILD</p>
-            <h2 class="animate-on-scroll">#BUIDL using Unmarshal AI</h2>
-            <div class="buidl-cards">
-                <div class="buidl-card animate-on-scroll">
-                    <i class="icon-bg fas fa-code"></i>
-                    <h3>Build It Yourself</h3>
-                    <p>Parsers come with Inbuilt support for Indexing, API generation.</p>
-                    <a href="#" class="learn-more">LEARN MORE <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="buidl-card green-bg animate-on-scroll">
-                    <i class="icon-bg fas fa-cogs"></i>
-                    <h3>We can build for you</h3>
-                    <p>Experts from Unmarshal Network can understand your requirement.</p>
-                    <a href="#" class="learn-more">LEARN MORE <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
+            <!-- Testimonial Section -->
+            <section class="section testimonial-section">
+                <div class="container">
+                    <h2 class="section-title">Words of Appreciation</h2>
+                    <p class="section-subtitle">Thousands of businesses, from startups to enterprises, use CoreShift to handle payments.</p>
 
-        <!-- Newsletter & Contact Section -->
-        <section class="newsletter-section container">
-            <div class="left-content animate-on-scroll">
-                <h2>Join Our Newsletter</h2>
-                <p>Hipster ipsum tattooed brunch I'm baby. Based on hipster deep piz meditation.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="YOUR EMAIL">
-                    <button type="submit">SUBMIT</button>
-                </form>
-            </div>
-            <div class="right-contact-card animate-on-scroll">
-                <i class="icon-bg fas fa-comment"></i>
-                <p>Your feedback is much appreciated. Send an email to <a href="mailto:info@unmarshal.io">info@unmarshal.io</a> for enquiries.</p>
-                <a href="mailto:info@unmarshal.io" class="btn btn-secondary">SEND MESSAGE</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content container">
-            <div class="footer-logo-section">
-                <a href="#" class="logo">
-                    <i class="fas fa-cube"></i> unmarshal
-                </a>
-                <p>The easiest way to query Blockchain data from 35+ chains including Ethereum, BSC, Polygon</p>
-                <div class="footer-social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <div class="testimonial-carousel-container">
+                        <div class="testimonial-carousel-track">
+                            <!-- Testimonial Card 1 -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Sarah Mitchell" class="reviewer-avatar">
+                                    <div class="reviewer-info">
+                                        <h4>Sarah Mitchell</h4>
+                                        <p>HR Director at Nexa Solutions</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    "CoreShift has streamlined our HR processes, making tasks like onboarding and performance tracking more efficient. It helps us stay organized and saves our team time, allowing us to focus more on supporting our employees."
+                                </p>
+                            </div>
+                            <!-- Testimonial Card 2 -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="James Carter" class="reviewer-avatar">
+                                    <div class="reviewer-info">
+                                        <h4>James Carter</h4>
+                                        <p>HR Manager at BrightPath Solutions</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    "The platform is easy to use, keeps everything in one place, and helps our team stay on top of things without extra hassle."
+                                </p>
+                            </div>
+                             <!-- Testimonial Card 3 -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="Emily White" class="reviewer-avatar">
+                                    <div class="reviewer-info">
+                                        <h4>Emily White</h4>
+                                        <p>Operations Lead at Global Innovations</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    "CoreShift has transformed how we manage our workforce. The intuitive interface and robust features make HR tasks a breeze. Highly recommend for any growing business."
+                                </p>
+                            </div>
+                            <!-- Testimonial Card 4 -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Michael Brown" class="reviewer-avatar">
+                                    <div class="reviewer-info">
+                                        <h4>Michael Brown</h4>
+                                        <p>Founder at Startup Dynamics</p>
+                                    </div>
+                                </div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>5.0</span>
+                                </div>
+                                <p class="testimonial-text">
+                                    "As a startup, having an all-in-one HR solution like CoreShift is invaluable. It scales with us and ensures we're compliant and efficient from day one."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-navigation">
+                        <button class="carousel-btn prev-btn"><i class="fas fa-arrow-left"></i></button>
+                        <button class="carousel-btn next-btn"><i class="fas fa-arrow-right"></i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-links">
-                <div>
-                    <h4>Company</h4>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-main container">
+                <div class="footer-col footer-info">
+                    <a href="#" class="footer-logo">CoreShift</a>
+                    <p>CoreShift is the HRM platform that build a thriving workplace culture—all in one place.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Unmarshal 2.0</a></li>
-                        <li><a href="#">SMARSH</a></li>
-                        <li><a href="#">Roadmap</a></li>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Explorer</a></li>
+                        <li><a href="#">CoreHR</a></li>
+                        <li><a href="#">Recruit</a></li>
+                        <li><a href="#">Perform</a></li>
+                        <li><a href="#">Pulse</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>Legal</h4>
+                <div class="footer-col">
+                    <h4>Features</h4>
                     <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="#">DeFi APIs</a></li>
-                        <li><a href="#">NFT APIs</a></li>
-                        <li><a href="#">Bridge</a></li>
-                        <li><a href="#">Staked</a></li>
-                        <li><a href="#">NFT Indexer</a></li>
+                        <li><a href="#">Desk</a></li>
+                        <li><a href="#">Time</a></li>
+                        <li><a href="#">Analytics</a></li>
                     </ul>
                 </div>
+                <div class="footer-col">
+                    <h4>Pricing</h4>
+                    <ul>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-social">
+                    <h4>Follow us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom container">
-            <span>© 2024 Unmarshal. All Rights Reserved</span>
-            <div class="legal-links">
-                <a href="#">Terms and Conditions</a>
-                <a href="#">Privacy Policy</a>
+            <div class="footer-bottom-text container">
+                <span>© 2024 CoreShift. All rights reserved.</span>
             </div>
-        </div>
-    </footer>
+
+            <div class="footer-background-text">
+                CoreShift
+            </div>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
